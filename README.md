@@ -97,14 +97,15 @@ Assuming [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) an
 1. Clone this repository
 
     ```bash
-    git clone https://github.com/ryansheehan/terraria.git
+    git clone https://github.com/jdblackstar/terraria.git
+    git pull origin master, if already installed
     ```
 
 2. Open a terminal window into the directory downloaded by the git
 3. Build the container
 
     ```bash
-    docker build -t <name_here> .
+    docker build -t terraria .
     ```
 
 ## Running a container image
@@ -121,7 +122,7 @@ the server's config file.  You may wish to add the config file for many reasons,
 add a password to your server.
 
 ```bash
-docker run -it --rm -p 7777:7777 -v $HOME/terraria/world:/world ryshe/terraria:latest
+docker run -it --rm -p 7777:7777 -v $HOME/terraria/world:/root/.local/share/Terraria/Worlds jdblackstar/terraria:latest
 ```
 
 Let's break down this command:
