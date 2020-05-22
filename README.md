@@ -122,7 +122,7 @@ the server's config file.  You may wish to add the config file for many reasons,
 add a password to your server.
 
 ```bash
-docker run -it --rm -p 7777:7777 -v $HOME/terraria/world:/root/.local/share/Terraria/Worlds jdblackstar/terraria:latest
+docker run -it --rm -p 7777:7777 -v $HOME/test/terraria/world:/root/.local/share/Terraria/Worlds jdblackstar/terraria:latest
 ```
 
 Let's break down this command:
